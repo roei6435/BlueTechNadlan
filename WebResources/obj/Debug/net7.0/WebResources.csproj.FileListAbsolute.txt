@@ -1,0 +1,5 @@
+C:\Users\roei6\Desktop\NadlanCRM\WebResources\obj\Debug\net7.0\WebResources.csproj.AssemblyReference.cache
+C:\Users\roei6\Desktop\NadlanCRM\WebResources\obj\Debug\net7.0\WebResources.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roei6\Desktop\NadlanCRM\WebResources\obj\Debug\net7.0\WebResources.AssemblyInfoInputs.cache
+C:\Users\roei6\Desktop\NadlanCRM\WebResources\obj\Debug\net7.0\WebResources.AssemblyInfo.cs
+C:\Users\roei6\Desktop\NadlanCRM\WebResources\obj\Debug\net7.0\WebResources.csproj.CoreCompileInputs.cache

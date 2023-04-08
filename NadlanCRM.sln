@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.Account.Plugins", "BlueTech.Account.Plugins\BlueTech.Account.Plugins.csproj", "{EE342E3C-AE4C-43B6-959A-FA2C4706D4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.Assets.Plugins", "BlueTech.Assets.Plugins\BlueTech.Assets.Plugins.csproj", "{6E293022-576D-419B-A073-73BF54BAC9BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebResources", "WebResources\WebResources.csproj", "{C5845664-D0F1-4389-B6CB-3904DB5FCB56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JS", "JS", "{2055198E-35CA-4422-9B2A-DBA631026789}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.Leads.Plugins", "BlueTech.Leads.Plugins\BlueTech.Leads.Plugins.csproj", "{9F30BAA2-092F-4414-9FE5-BC45385BE55F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{27870D61-9416-40AB-8722-78E2FCBBDBF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTest", "Jobs\ConsoleAppTest.csproj", "{78320284-F802-4B4C-930E-698247EC1DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.Opportunity.Plugins", "BlueTech.Opportunity.Plugins\BlueTech.Opportunity.Plugins.csproj", "{F8F6690D-15D7-497E-8F3D-DA6B96E74D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.CustomWF", "BlueTech.CustomWF\BlueTech.CustomWF.csproj", "{6F60C80E-E2C6-4181-AF5E-4BA2FEE13469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.FirstAction.CreateAsset", "BlueTech.FirstAction.CreateAsset\BlueTech.FirstAction.CreateAsset.csproj", "{D5850981-4F42-4E85-B14A-090485D001E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.Action.CreateVisit", "BlueTech.Action.CreateVisit\BlueTech.Action.CreateVisit.csproj", "{2D60260B-6085-4A01-8B83-9D50172FC025}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE342E3C-AE4C-43B6-959A-FA2C4706D4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE342E3C-AE4C-43B6-959A-FA2C4706D4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE342E3C-AE4C-43B6-959A-FA2C4706D4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE342E3C-AE4C-43B6-959A-FA2C4706D4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E293022-576D-419B-A073-73BF54BAC9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E293022-576D-419B-A073-73BF54BAC9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E293022-576D-419B-A073-73BF54BAC9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E293022-576D-419B-A073-73BF54BAC9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5845664-D0F1-4389-B6CB-3904DB5FCB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5845664-D0F1-4389-B6CB-3904DB5FCB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5845664-D0F1-4389-B6CB-3904DB5FCB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5845664-D0F1-4389-B6CB-3904DB5FCB56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F30BAA2-092F-4414-9FE5-BC45385BE55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F30BAA2-092F-4414-9FE5-BC45385BE55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F30BAA2-092F-4414-9FE5-BC45385BE55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F30BAA2-092F-4414-9FE5-BC45385BE55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78320284-F802-4B4C-930E-698247EC1DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78320284-F802-4B4C-930E-698247EC1DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78320284-F802-4B4C-930E-698247EC1DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78320284-F802-4B4C-930E-698247EC1DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F6690D-15D7-497E-8F3D-DA6B96E74D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F6690D-15D7-497E-8F3D-DA6B96E74D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F6690D-15D7-497E-8F3D-DA6B96E74D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F6690D-15D7-497E-8F3D-DA6B96E74D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F60C80E-E2C6-4181-AF5E-4BA2FEE13469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F60C80E-E2C6-4181-AF5E-4BA2FEE13469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F60C80E-E2C6-4181-AF5E-4BA2FEE13469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F60C80E-E2C6-4181-AF5E-4BA2FEE13469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5850981-4F42-4E85-B14A-090485D001E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5850981-4F42-4E85-B14A-090485D001E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5850981-4F42-4E85-B14A-090485D001E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5850981-4F42-4E85-B14A-090485D001E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D60260B-6085-4A01-8B83-9D50172FC025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D60260B-6085-4A01-8B83-9D50172FC025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D60260B-6085-4A01-8B83-9D50172FC025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D60260B-6085-4A01-8B83-9D50172FC025}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE342E3C-AE4C-43B6-959A-FA2C4706D4DE} = {7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}
+		{6E293022-576D-419B-A073-73BF54BAC9BD} = {7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}
+		{C5845664-D0F1-4389-B6CB-3904DB5FCB56} = {2055198E-35CA-4422-9B2A-DBA631026789}
+		{9F30BAA2-092F-4414-9FE5-BC45385BE55F} = {7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}
+		{78320284-F802-4B4C-930E-698247EC1DFC} = {27870D61-9416-40AB-8722-78E2FCBBDBF0}
+		{F8F6690D-15D7-497E-8F3D-DA6B96E74D9F} = {7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}
+		{6F60C80E-E2C6-4181-AF5E-4BA2FEE13469} = {7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}
+		{D5850981-4F42-4E85-B14A-090485D001E7} = {7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}
+		{2D60260B-6085-4A01-8B83-9D50172FC025} = {7CCDCCA3-B9B8-4217-9AA6-655A90ECC7E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {472FD299-E218-423A-891A-A49E0AA10C89}
+	EndGlobalSection
+EndGlobal
