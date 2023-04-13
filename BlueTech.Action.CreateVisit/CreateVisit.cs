@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace BlueTech.Action.CreateVisit
 {
@@ -20,21 +21,42 @@ namespace BlueTech.Action.CreateVisit
 
             string name = context.InputParameters.Contains("name") ? context.InputParameters["name"].ToString() : null;
             string phone = context.InputParameters.Contains("phone") ? context.InputParameters["phone"].ToString() : null;
-            string email = context.InputParameters.Contains("mail") ? context.InputParameters["mail"].ToString() : null;
-            var date = context.InputParameters.Contains("date") ? (DateTime)context.InputParameters["date"] :DateTime.MinValue;
-          
-            EntityReference assetRef = context.InputParameters.Contains("assetid") ? (EntityReference)context.InputParameters["assetid"] : null;
-            if (!string.IsNullOrEmpty(phone) && !string.IsNullOrEmpty(email))
+            string email = context.InputParameters.Contains("email") ? context.InputParameters["email"].ToString() : null;
+            DateTime? date = context.InputParameters.Contains("date") ? (DateTime)context.InputParameters["date"] :(DateTime?) null;
+            EntityReference assetRef = context.InputParameters.Contains("assetRef") ? (EntityReference)context.InputParameters["assetRef"] : null;
+            EntityReference visitorRef = context.InputParameters.Contains("contactRef") ? (EntityReference)context.InputParameters["contactRef"] : null;
+
+
+
+           
+            if (!string.IsNullOrEmpty(phone) && !string.IsNullOrEmpty(email)&&date != null&&assetRef!=null)
             {
+                if (visitorRef is null)
+                {
+                 
+                    // Find visitor by contact
+                    visitorRef=FindContactByPhoneOrMail(phone, email, service);
 
-                EntityReference visitorRef = FindContactByPhoneOrMail(phone, email, service);
-                if (visitorRef is null) visitorRef = FindLeadByPhoneOrMail(name,phone, email, service);
+                    //2. If not found contact, find visitor by lead
+                    if (visitorRef is null) 
+                        visitorRef = FindLeadByPhoneOrMail(phone, email, service);
 
-               Guid visitId= CreateVisitInAsset(assetRef, visitorRef, date, service);
+                    //3. If not found lead, be create lead, and this lead will be visitor
+                    if (visitorRef is null)
+                        visitorRef = CreateNewLead(name, phone, email, service);
 
-                context.OutputParameters["visitid"] =new EntityReference("roe_visitinasset", visitId);
+                }
 
+                //4. Now can create visit in asset
+                Guid visitId = CreateVisitInAsset(assetRef, visitorRef, (DateTime)date, service);
 
+                //5. Create visit in asset
+                context.OutputParameters["visitRef"] = new EntityReference("roe_visitinasset", visitId);
+
+            }
+            else
+            {
+                tracingService.Trace("No required fields were received");
             }
         }
 
@@ -55,7 +77,7 @@ namespace BlueTech.Action.CreateVisit
             return new EntityReference("contact", contact.Id);
 
         }
-        private EntityReference FindLeadByPhoneOrMail(string name, string phone, string email,IOrganizationService service)
+        private EntityReference FindLeadByPhoneOrMail(string phone, string email,IOrganizationService service)
         {
             QueryExpression query = new QueryExpression("lead");
             query.ColumnSet = new ColumnSet(false);
@@ -68,10 +90,12 @@ namespace BlueTech.Action.CreateVisit
 
             Entity lead = service.RetrieveMultiple(query).Entities.FirstOrDefault();
             if (lead != null) return new EntityReference("lead", lead.Id);   //found lead
-
-            //create new lead
-            lead = new Entity("lead");            
-            lead.Attributes.Add("firstname",name.Split(' ')[0]);
+            return null;
+        }
+        private EntityReference CreateNewLead(string name,string phone,string email,IOrganizationService service)
+        {
+            Entity lead = new Entity("lead");
+            lead.Attributes.Add("firstname", name.Split(' ')[0]);
             lead.Attributes.Add("lastname", name.Split(' ')[1]);
             lead.Attributes.Add("emailaddress1", email);
             lead.Attributes.Add("mobilephone", phone);

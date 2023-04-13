@@ -34,7 +34,7 @@ namespace ConsoleApplication1
           
             Guid leadId = new Guid("6d7b103d-53c4-ed11-9886-000d3add8f0a");
             Entity ent = service.Retrieve("lead", leadId, new ColumnSet(true));
-        }//tt
+        }
 
 
     }

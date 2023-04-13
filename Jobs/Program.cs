@@ -33,9 +33,10 @@ namespace ConsoleApplication1
             //CreateAccountWithAction ca = new CreateAccountWithAction(GetService());
             //ca.Execute();
 
-            CreateVisitInAsset visitInAsset = new CreateVisitInAsset(GetService());
-            visitInAsset.Execute();
+              CreateVisitInAsset visitInAsset = new CreateVisitInAsset(GetService());
+             visitInAsset.Execute();
 
+           
             Console.ReadKey();  
         }
 
