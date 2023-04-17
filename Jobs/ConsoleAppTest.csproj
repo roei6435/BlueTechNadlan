@@ -255,8 +255,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassTest.cs" />
-    <Compile Include="CreateAccountWithAction.cs" />
-    <Compile Include="CreateVisitInAsset.cs" />
+    <Compile Include="CallToActions.cs" />
     <Compile Include="ImportData.cs" />
     <Compile Include="ProfitAccount.cs" />
     <Compile Include="Program.cs" />
