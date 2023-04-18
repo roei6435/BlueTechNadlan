@@ -91,6 +91,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionsBL.cs" />
     <Compile Include="CreateAsset.cs" />
     <Compile Include="CreateVisitInAsset.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
