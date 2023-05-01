@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTech.Actions.Plugins", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{EEE28C8B-DE39-497C-BAEA-063BEEDEC913}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crmBL", "crmBL\crmBL.csproj", "{0763E99F-115D-4737-84CE-0D07D2A2C5C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.WS", "CRM.WS\CRM.WS.csproj", "{5E6AEA7F-1478-435B-922F-E183DA72495E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{EEE28C8B-DE39-497C-BAEA-063BEEDEC913}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEE28C8B-DE39-497C-BAEA-063BEEDEC913}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEE28C8B-DE39-497C-BAEA-063BEEDEC913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0763E99F-115D-4737-84CE-0D07D2A2C5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0763E99F-115D-4737-84CE-0D07D2A2C5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0763E99F-115D-4737-84CE-0D07D2A2C5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0763E99F-115D-4737-84CE-0D07D2A2C5C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6AEA7F-1478-435B-922F-E183DA72495E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6AEA7F-1478-435B-922F-E183DA72495E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6AEA7F-1478-435B-922F-E183DA72495E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6AEA7F-1478-435B-922F-E183DA72495E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

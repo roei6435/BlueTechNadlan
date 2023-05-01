@@ -3,9 +3,7 @@
     var contact = fromContext.getAttribute("parentcontactid").getValue();
     var datetimeofvisit = fromContext.getAttribute("roe_datetimeofvisit").getValue();
     if (asset&& contact&& datetimeofvisit) {
-       
-        fromContext.ui.clearFormNotification();
-       
+           
         callToActionWithHttpRequest(asset[0].id, contact[0].id, datetimeofvisit, "defult velue", function(success) {
             if (success) {
                 fromContext.ui.setFormNotification("The visit was created successfully.", "INFO");
@@ -13,12 +11,11 @@
                 fromContext.ui.setFormNotification("Oops something went wrong.", "ERROR");
             }
         });
-
     }
     else{
-        fromContext.ui.clearFormNotification();
         fromContext.ui.setFormNotification("To schedule a visit, fields must be filled: asset, contact, date of visit.", "ERROR");
     } 
+    fromContext.ui.clearFormNotification();
 }
 
 

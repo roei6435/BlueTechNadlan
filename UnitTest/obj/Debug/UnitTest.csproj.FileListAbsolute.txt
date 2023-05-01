@@ -59,3 +59,6 @@ C:\Users\roei6\Desktop\NadlanCRM\UnitTest\obj\Debug\UnitTestProject1.dll
 C:\Users\roei6\Desktop\NadlanCRM\UnitTest\obj\Debug\UnitTestProject1.pdb
 C:\Users\roei6\Desktop\NadlanCRM\UnitTest\bin\Debug\BlueTech.Actions.Plugins.dll
 C:\Users\roei6\Desktop\NadlanCRM\UnitTest\bin\Debug\BlueTech.Actions.Plugins.pdb
+C:\Users\roei6\Desktop\NadlanCRM\UnitTest\bin\Debug\crmBL.dll
+C:\Users\roei6\Desktop\NadlanCRM\UnitTest\bin\Debug\crmBL.pdb
+C:\Users\roei6\Desktop\NadlanCRM\UnitTest\bin\Debug\crmBL.dll.config

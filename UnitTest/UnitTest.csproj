@@ -142,6 +142,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactUsTest.cs" />
     <Compile Include="VisitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -153,6 +154,10 @@
     <ProjectReference Include="..\BlueTech.Actions.Plugins\BlueTech.Actions.Plugins.csproj">
       <Project>{d085ea55-a1fd-45fb-8684-e41a03edcf9e}</Project>
       <Name>BlueTech.Actions.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\crmBL\crmBL.csproj">
+      <Project>{0763e99f-115d-4737-84ce-0d07d2a2c5c5}</Project>
+      <Name>crmBL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

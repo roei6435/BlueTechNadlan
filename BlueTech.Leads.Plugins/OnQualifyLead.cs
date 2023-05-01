@@ -29,7 +29,7 @@ namespace BlueTech.Leads.Plugins
                     OptionSetValue choiceValue = lead.Attributes.Contains("roe_typeturn") ? (OptionSetValue)lead["roe_typeturn"] : new OptionSetValue(0);
 
                     var createReq = new CreateRequest() { Parameters = context.InputParameters };
-                    if (choiceValue.Value == 913200000) // buye
+                    if (choiceValue.Value == 913200000) // buye 
                     {
                         createReq.Parameters["CreateAccount"] = false;
 
